@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(238, 238, 212);
+}
+
+.email {
+    border-radius: 15px;
+    padding: 10px 80px;
+    border: 1px  rgba(0, 0, 0, 0.5);
+    background-color: #d3d0d0;
+    text-align: center;
+    color: antiquewhite;
+    outline: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 80px;
+    background-color: #000000;
+}
+/*
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 80px;
+    background-color: #000000;
+
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 80px;
+    background-color: #000000;
+}
+*/
+.enviar {
+    margin: 10px;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: antiquewhite;
+    background-color: #1a2a6c;
+}
+
+.enviar:hover {
+    background-color: #274299;
+}
