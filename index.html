@@ -12,40 +12,43 @@
 <body>
     <div class="container">
         <form method="POST" id="form">
-            <label for="email">Correo electronico</label>
-            <input id="email" class="email" name="email" type="text" size="30" placeholder="Ejemplo: juan@example.com" />
-            <button type="submit" class="enviar" onclick="validarEmail(document.getElementById('email').value)">Sing up</button>
+            <label for="email">Join the mailing list</label>
+           <div class="container-items">
+             <input id="email" class="email" name="email" type="text" size="30" placeholder="example@email.com" />
+             <button type="submit" class="enviar" onclick="validarEmail(form.email.value)">Sing up</button>
+           </div>
         </form>
     </div>
     <script>
         function validarEmail(email){
-            var url= "https://emailtest.free.beeceptor.com/my/api/path";
+            var url= "https://requestinspector.com/inspect/01g7q5khwdk5xcx3pxywm0kpre";
             var expReg=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
             var validar=expReg.test(email);
             if(validar==true){
-                const $form = document.querySelector('#form')
-                $form.addEventListener('submit', handleSubmit)
+                const $form = document.querySelector('#form');
+                $form.addEventListener('submit', handleSubmit);
                 async function handleSubmit(event){
-                    event.preventDefault()
-                    const form = new FormData(this)
+                    event.preventDefault();
+                    const form = new FormData(this);
                     const response = await fetch(url, {
                         method : this.method,
                         body: form,
                         headers: {
-                            'Accept': 'application/json'
+                            'Accept':'application/json'
                         }
                     })
-                    if(response.ok){
-                        alert('El email se envio correctamente, gracias. :)');
+                    location.reload();
+                    if (response.ok){
                         this.reset()
+                        alert('El email se envio correctamente, gracias.');
                     }
                 }
             }
             else{
-
                 alert('No es un email valido! :(');
-                location.reset()
+                location.reload();
             }
+
         }
     </script>
 </body>
