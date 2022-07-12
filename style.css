@@ -31,13 +31,13 @@
         color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
-        margin-top: 25px;
+        margin-top: 15px;
         justify-content: center;
     }
 
     .email {
         border-radius: 15px;
-        padding: 0px 30px;
+        padding: 20px 30px;
         border: 1px rgba(0, 0, 0, 0.5);
         background-color: #dac684;
         text-align: center;
@@ -57,23 +57,16 @@
         justify-content: center;
         align-items: center;
         background-color: #d4ad2c;
-    }
-
-    form .container-items {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        padding: 10px 20px;
-
+        padding: 5px 10px;
     }
 
     .enviar {
-        margin: 10px;
+        margin: 5px;
         border-radius: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 15px;
         font-weight: bold;
-        padding: 20px 30px;
+        padding: 20px 20px;
         border: 1px solid rgba(0, 0, 0, 0);
         color: antiquewhite;
         background-color: #000000;
@@ -111,9 +104,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 10px 10px;
         background-color: #d4ad2c;
     }
+    
 
     label {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -123,12 +117,12 @@
     }
     .email {
         border-radius: 15px;
-        size: 20px;
+
         padding: 10px 30px;
         border: 1px rgba(0, 0, 0, 0.5);
         background-color: #dac684;
         text-align: center;
-        font-size: 15px;
+        font-size: 12px;
         color: rgb(0, 0, 0);
         outline: none;
     }
